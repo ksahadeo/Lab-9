@@ -13,8 +13,14 @@ def encode(password):
     return message
 
 
-def decode():
-    test fior thing
+def decode(encoded):
+    decoded_password = ''
+    for char in encoded:
+        if char.isdigit():
+            decoded_password += str((int(char) - 3) % 10)
+        else:
+            decoded_password += char
+    return decoded_password
 
 
 if __name__ == "__main__":
@@ -26,6 +32,6 @@ if __name__ == "__main__":
             password = input("Please enter your password to encode: ")
             encode(password)
         elif opt == 2:
-            decode()
+            decode(encoded)
         elif opt == 3:
             use = False
