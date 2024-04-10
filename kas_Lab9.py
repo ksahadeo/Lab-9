@@ -1,6 +1,5 @@
 # Kayla Sahadeo's repository (encode() function)
-def encode():
-    password = input("Please enter your password to encode: ")
+def encode(password):
     encoded = []
     message = []
     for number in password:
@@ -23,7 +22,8 @@ if __name__ == "__main__":
         print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit")
         opt = input("Please enter an option: ")
         if opt == 1:
-            encode()
+            password = input("Please enter your password to encode: ")
+            encode(password)
         elif opt == 2:
             decode()
         elif opt == 3:
