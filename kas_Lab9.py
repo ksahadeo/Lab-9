@@ -14,7 +14,7 @@ def encode(password):
 
 
 def decode():
-    pass
+    test fior thing
 
 
 if __name__ == "__main__":
