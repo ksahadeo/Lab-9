@@ -21,7 +21,7 @@ if __name__ == "__main__":
     use = True
     while use is True:
         print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit")
-        opt = input("Please enter an option: ")
+        opt = int(input("Please enter an option: "))
         if opt == 1:
             password = input("Please enter your password to encode: ")
             encode(password)
