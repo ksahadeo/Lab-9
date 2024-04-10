@@ -1,5 +1,6 @@
 # Kayla Sahadeo's repository (encode() function)
 def encode(password):
+
     encoded = []
     message = []
     for number in password:
